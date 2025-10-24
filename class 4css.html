@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Page</title>
+    <style>
+        /* Style the section */
+        section {
+            margin: 20px;
+        }
+
+        /* Make only the first line of each paragraph bold */
+        section p::first-line {
+            font-weight: bold;
+        }
+
+        /* Make only the first letter of each paragraph red and larger */
+        section p::first-letter {
+            color: red;
+            font-size: larger;
+        }
+
+        /* Color only the second heading green using a selector */
+        h3 + h3 {
+            color: green;
+        }
+
+        /* Style links inside the div */
+        div ul li a {
+            color: blue;
+        }
+        div ul li a:visited {
+            color: purple;
+        }
+        div ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Make the first link in the list red */
+        div ul li:first-child a {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>Section Heading</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </section>
+    <div>
+        <h3>Heading 1</h3>
+        <h3>Heading 2</h3>
+        <ul>
+            <li><a href="                  
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+    </div>
+</body>
+</html>
