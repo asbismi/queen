@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple blog post</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  padding: 40px;
+}
+
+.blog-post {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Title and Author */
+.title {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.author {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Paragraph styling */
+p::first-line {
+  font-weight: bold;
+}
+
+p::first-letter {
+  font-size:xx-large;
+  color: #0077cc;
+}
+
+/* Quote styling */
+.quote {
+  margin: 20px 0;
+  padding-left: 20px;
+  border-left: 4px solid #0077cc;
+  font-style: italic;
+  color: #333;
+  position: relative;
+}
+
+.quote::before {
+  content: "“";
+  font-size: 36px;
+  color: #0077cc;
+  position: absolute;
+  left: 0;
+  top: -10px;
+}
+
+/* Anchor pseudo-classes */
+a {
+  color:#f2f;
+  text-decoration: none;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Two h4 elements side by side */
+h4 {
+  display: inline-block;
+  margin-right: 15px;
+  color: #f2f;
+}
+
+/* Adjacent sibling selector */
+h4 + h4 {
+  color: #0077cc;
+}
+    </style>
+</head>
+<body>
+    <div class=="blog post">
+        <h1 class="title">The beauty of simplisity</h1>
+        <p class="auther">by <a href="#">Bismi.As</a></p>
+
+        <p>Simplicity is the ultimate sophistication. When we strip away the unnecessary, 
+            we begin to see the essence of things more clearly. A minimalist approach 
+            brings clarity and focus to what truly matters.</p>
+      <blockquote class="quote">
+      design is not just what it look like and feel like.design os how it works.
+        </blockquote>
+        <h4> category:design</h4>
+        <h4>read time:3 min</h4>
+        </div>
+
+</body>
+</html>
