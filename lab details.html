@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Card</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.product-card {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  transition: background-color 0.3s ease;
+}
+
+.product-image {
+  width: 100%;
+  border: 2px solid black;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.product-name {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.buy-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buy-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Small screen adjustments */
+@media (max-width: 600px) {
+  .product-card {
+    margin: 0 auto;
+  }
+  .product-name {
+    font-size: 16px;
+  }
+  .buy-btn {
+    font-size: 14px;
+  }
+}
+
+/* Landscape mode */
+@media (orientation: landscape) {
+  .product-card {
+    background-color: lightblue;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="product-card">
+    <img src="https://via.placeholder.com/250" alt="Product Image" class="product-image">
+    <h2 class="product-name">Awesome Product</h2>
+    <button class="buy-btn">Buy Now</button>
+  </div>
+</body>
+</html>
