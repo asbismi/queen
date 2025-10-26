@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured Blog Section</title>
+  <style>
+  /* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.blog-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.blog-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.blog-post {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+/* Highlight only https links */
+a[href^="https"] {
+  color: red;
+}
+
+/* Style .jpg images with rounded corners */
+img[src$=".jpg"] {
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 600px) {
+  .blog-container {
+    flex-direction: column;
+  }
+  .blog-post {
+    font-size: 14px;
+  }
+}
+
+/* Portrait orientation styling */
+@media (orientation: portrait) {
+  .blog-section {
+    background-color: lightyellow;
+  }
+}
+</style>
+</head>
+<body>
+  <section class="featured-blog">
+    <div class="blog-post">
+      <h2>Discover the Beauty of Nature</h2>
+      <img src="nature.jpg" alt="Nature">
+      <a href="https://example.com">Read More</a>
+    </div>
+
+    <div class="blog-post">
+      <h2>Technology and the Future</h2>
+      <img src="tech.jpg" alt="Technology">
+      <a href="http://example.com">Read More</a>
+    </div>
+
+    <div class="blog-post">
+      <h2>Healthy Living Tips</h2>
+      <img src="health.jpg" alt="Health">
+      <a href="https://example.org">Read More</a>
+    </div>
+  </section>
+</body>
+</html>
